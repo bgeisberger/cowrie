@@ -40,3 +40,6 @@ wokkel==18.0.0
 # misp
 pymisp==2.4.134
 
+
+# nsq
+gnsq==1.0.2
