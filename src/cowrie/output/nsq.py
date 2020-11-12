@@ -23,7 +23,7 @@ class Output(cowrie.core.output.Output):
             port = 4150
 
         try:
-            auth_secret = CowrieConfig().get('output_nsq', 'auth_secret')
+            auth_secret = CowrieConfig().get('output_nsq', 'auth_secret').encode("utf-8")
         except NoOptionError:
             auth_secret = None
 
